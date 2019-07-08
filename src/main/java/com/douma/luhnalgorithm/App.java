@@ -6,9 +6,9 @@ public class App
     {
         LuhnAlgorithm luhnAlgorithm = new LuhnAlgorithm();
         if(luhnAlgorithm.valid(args[0])) {
-            System.out.println("Yes");
+            System.out.println("Valid");
         } else {
-            System.out.println("No");
+            System.out.println("Not valid");
         }
     }
 }
