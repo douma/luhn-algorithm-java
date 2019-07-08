@@ -1,13 +1,14 @@
 package com.douma.luhnalgorithm;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        LuhnAlgorithm luhnAlgorithm = new LuhnAlgorithm();
+        if(luhnAlgorithm.valid(args[0])) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
     }
 }
