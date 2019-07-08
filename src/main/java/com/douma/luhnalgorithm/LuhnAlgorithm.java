@@ -1,12 +1,18 @@
 package com.douma.luhnalgorithm;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class LuhnAlgorithm
 {
-    public boolean valid(String code)
+    public boolean valid(String code) throws Exception
     {
+        if(!NumberUtils.isCreatable(code)) {
+           throw InvalidNumberException.forNumber(code);
+        }
+
         String reversed = new StringBuilder(code).reverse().toString();
         int index = 1;
         List<Integer> resultArray = new ArrayList<Integer>();

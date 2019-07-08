@@ -2,7 +2,7 @@ package com.douma.luhnalgorithm;
 
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
         LuhnAlgorithm luhnAlgorithm = new LuhnAlgorithm();
         if(luhnAlgorithm.valid(args[0])) {
