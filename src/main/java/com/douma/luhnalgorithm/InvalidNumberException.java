@@ -1,6 +1,6 @@
 package com.douma.luhnalgorithm;
 
-public class InvalidNumberException extends Exception
+public class InvalidNumberException extends RuntimeException
 {
     InvalidNumberException()
     {

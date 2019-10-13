@@ -7,7 +7,7 @@ import java.util.List;
 
 public class LuhnAlgorithm
 {
-    public boolean valid(String code) throws Exception
+    public boolean valid(String code)
     {
         if(!NumberUtils.isCreatable(code)) {
            throw InvalidNumberException.forNumber(code);

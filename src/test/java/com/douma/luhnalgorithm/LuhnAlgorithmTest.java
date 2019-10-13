@@ -23,7 +23,7 @@ public class LuhnAlgorithmTest extends TestCase
         this.assertFalse(luhnAlgorithm.valid("8273123273520569"));
     }
 
-    public void test_exception_invalid_number() throws Exception
+    public void test_exception_invalid_number()
     {
         int exceptionCount = 0;
         try {
@@ -32,7 +32,7 @@ public class LuhnAlgorithmTest extends TestCase
         } catch(InvalidNumberException e) {
             exceptionCount +=1;
         } catch(Exception e) {
-            throw new Exception("Should not be here");
+            throw new RuntimeException("Should not be here");
         }
         this.assertTrue(exceptionCount == 1);
     }
